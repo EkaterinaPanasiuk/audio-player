@@ -1,0 +1,15 @@
+@import "./var.scss";
+.link {
+  text-decoration: none;
+  color: $color-black;
+  &:hover {
+    color: $color-hover;
+  }
+  &:active {
+    color: $color-active;
+  }
+
+  &:focus {
+    color: $color-hover;
+  }
+}

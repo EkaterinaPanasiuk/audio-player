@@ -1,0 +1,12 @@
+@import "./scss/reset.scss";
+@import "./scss/commonClasses.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/main.scss";
+@import "./blocks/audio.scss";
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}

@@ -1,0 +1,53 @@
+@import "../scss/var.scss";
+.audio-btn {
+  background-color: transparent;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.audio-range-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: aqua;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.audio-range {
+  width: 100%;
+  display: block;
+  height: 0.5rem;
+  background-color: blueviolet;
+  position: ablolute;
+  top: 0;
+  left: -100%;
+}
+.animateRange {
+  transition: all 1s;
+  transform: translateX(100%);
+}
+.control-wrapper {
+  width: 100%;
+  @include display-flex-row-cen-cen;
+  padding: 0.5em;
+  gap: 1rem;
+}
+.control-btn {
+  width: 3rem;
+  height: 3rem;
+  &:hover {
+    background-color: $color-hover;
+  }
+  &.active {
+    background-color: $color-active;
+  }
+  &.disabled {
+    background-color: rgba(22, 151, 46, 0.595);
+  }
+}
